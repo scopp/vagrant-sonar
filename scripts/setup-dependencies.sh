@@ -19,7 +19,7 @@ sudo cp /tmp/sonar.list /etc/apt/sources.list.d/
 rm /tmp/sonar.list
 sudo apt-get -y update
 sudo apt-get -y install sonar --force-yes
-sudo dpkg -i /vagrant/binaries/sonar_5.1.1_all.deb
+#sudo dpkg -i /vagrant/binaries/sonar_5.1.1_all.deb
 
 echo ">>>>>>>>>>>>>> Setting up Sonar DB and starting webserver"
 sudo su - postgres -c "/vagrant/scripts/create-sonar-db.sh"

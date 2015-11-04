@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 
+echo ">>>>>>>>>>>>>> Updating apt-get"
+sudo apt-get -y update --fix-missing
+
 echo ">>>>>>>>>>>>>> Adding Puppet modules"
 puppet module install maestrodev-sonarqube
 puppet module install puppetlabs-postgresql
 puppet module install puppetlabs-java
-
-
-echo ">>>>>>>>>>>>>> Updating apt-get"
-sudo apt-get -y update --fix-missing
 
 #echo ">>>>>>>>>>>>>> Installing wget"
 #sudo apt-get -y install wget

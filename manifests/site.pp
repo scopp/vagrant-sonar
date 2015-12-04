@@ -24,7 +24,8 @@ class { 'java':
 class { 'maven::maven' : } ->
 class { 'sonarqube' :
   arch          => 'linux-x86-64',
-  version       => '5.1.2',
+  version       => '5.2',
+  download_url  => 'https://sonarsource.bintray.com/Distribution/sonarqube',
   user          => 'sonar',
   group         => 'sonar',
   service       => 'sonar',
